@@ -211,6 +211,7 @@ bool MyString::checkDriverName(MyString value)
 	{
 		return false;
 	}
+	return true;
 }
 
 bool MyString::checkStateRegSign(MyString value)
