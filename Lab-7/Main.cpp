@@ -6,7 +6,7 @@
 #include "MySort.h"
 
 void printMyArray(MyArray<MyClass>& arr);
-void  workWithFileAndArray(MyArray<MyClass>& arr);
+void workWithFileAndArray(MyArray<MyClass>& arr);
 int maxNumberRoute(MyArray<MyClass>& arr);
 
 int maxNameSize(MyArray<MyClass>& arr);
@@ -58,9 +58,9 @@ void workWithFileAndArray(MyArray<MyClass>& arr)
         int rightNumber = number.translateNum(number);
         try
         {
-            if (nameDriver.checkDriverName(nameDriver))
+            if (!nameDriver.checkDriverName(nameDriver))
             {
-                std::cout << "Имя и фамилия водителя введена неправильно!" << std::endl;
+                std::cout << "Имя и фамилия водителя введена неправильно! " << nameDriver << std::endl;
                 exit(1);
             }
         }
@@ -72,7 +72,7 @@ void workWithFileAndArray(MyArray<MyClass>& arr)
         {
             if (!(stateRegSign.checkStateRegSign(stateRegSign)))
             {
-                std::cout << "Государственный регистрационный номер должен иметь заглавные буквы!" << std::endl;
+                std::cout << "Государственный регистрационный номер должен иметь заглавные буквы! " << stateRegSign << std::endl;
                 exit(1);
             }
         }
@@ -85,7 +85,7 @@ void workWithFileAndArray(MyArray<MyClass>& arr)
         {
             if (rightNumber < 0)
             {
-                std::cout << "Номер маршрута не может быть отрицательным!" << std::endl;
+                std::cout << "Номер маршрута не может быть отрицательным! " << rightNumber << std::endl;
                 exit(1);
             }
         }
