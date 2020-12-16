@@ -16,13 +16,13 @@ int lenNumberRoute(int numb);
 
 int main()
 {
-	setlocale(LC_ALL, "ru");
+    setlocale(LC_ALL, "ru");
     
-	MyArray<MyClass> array;
+    MyArray<MyClass> array;
     workWithFileAndArray(array);
     maxNumberRoute(array);
     sort(array, 0);
-	printMyArray(array);
+    printMyArray(array);
 }
 
 void workWithFileAndArray(MyArray<MyClass>& arr)
