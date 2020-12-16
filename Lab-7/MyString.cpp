@@ -186,7 +186,7 @@ bool MyString::checkDriverName(MyString value)
 		return false;
 	}
 	int i = 1;
-	while (name[i] != ' ' || name[i] != '-') 
+	while (name[i] != ' ' && name[i] != '-') 
 	{
 		if (name[i] < 97 || name[i] > 122)
 		{
