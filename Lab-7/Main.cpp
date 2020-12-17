@@ -144,7 +144,7 @@ void printMyArray(MyArray<MyClass>& arr)
 
     fout << "| Гос. регистрационный знак |";
     fout << std::endl;
-    for (int i = 0; i < arr.getSize() - 1; i++)
+    for (int i = 0; i < arr.getSize(); i++)
     {
         fout << " ";
         fout << arr[i].getNumberRoute();
